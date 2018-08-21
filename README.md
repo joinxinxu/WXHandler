@@ -2,3 +2,4 @@
 # WXUncaughtExceptionHandler
 # WXExceptionHandler
 # WXExceptionHandler
+# WXHandler
