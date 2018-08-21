@@ -1,5 +1,4 @@
-# WXUncaughtExceptionHandler
-# WXUncaughtExceptionHandler
-# WXExceptionHandler
-# WXExceptionHandler
-# WXHandler
+开发iOS应用，解决Crash问题始终是一个难题。Crash分为两种，一种是由EXC_BAD_ACCESS引起的，原因是访问了不属于本进程的内存地址，有可能是访问已被释放的内存；另一种是未被捕获的Objective-C异常（NSException），导致程序向自身发送了SIGABRT信号而崩溃。其实对于未捕获的Objective-C异常，我们是有办法将它记录下来的，如果日志记录得当，能够解决绝大部分崩溃的问题。这里对于UI线程与后台线程分别说明。
+
+网上的捕获异常的方法都大同小异，都是处理处理signal信号。这里我把捕获的异常保存到缓存目录上，然后你可以通过邮件或者网络接口把自己发给自己或者公司，便于自己分析和在下个版本上进行修复工作。
+
